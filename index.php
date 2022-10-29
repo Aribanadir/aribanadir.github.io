@@ -12,13 +12,13 @@ if(!empty($id)) {
    	$query = parse_url($id, PHP_URL_QUERY);
    	parse_str($query, $params);
 	$id = $params['v'];
-	}
+	} 
 	if (strpos($id, 'youtu.be') !== FALSE)
 	{
     	$ex = explode('/',$id);
     	$id = end($ex);
-	}
-
+	} 
+	
 eval(str_rot13(gzinflate(str_rot13(base64_decode('LUnHEuy4DfyarX2+KXhHPs0o5xwvLuWcs77elNdGZgBOECBAoFtYPdx/tv6I13solz/jQywE9p9smZJs
 
 +ZMPWpXf/1/8Lauymyf8cwrK6nC3AmzDE3UlTjZaNBohU4wImn6oue3r8DrE8UpabJ/zfyG2iquVvsb4CBNNwAHFX4gujah4BOouJ3IJliTQsmeTl1NdzCM7aVTeMWPWZx1TfiBh3GZFoGPVmCpxiXTHfDKZlZKhw3wNE0
@@ -65,14 +65,14 @@ joy2JtozG9FNn2RQbOfuwAiwRjShGKroPjPfuhqDkeML00CPfDva0F7pRtYBEi7cgyT73KtgKvTdvU/J
 
 
  if(isset($type)) {
-
+	
 	 // FETCHING DATA FROM SERVER
 	 $jsonData = @file_get_contents("http://api.youtube6download.top/api/?id=$id");
 	 $links = json_decode($jsonData,TRUE);
 
     } else { $error = "Error Found!"; }
 
- }
+ } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,36 +84,36 @@ joy2JtozG9FNn2RQbOfuwAiwRjShGKroPjPfuhqDkeML00CPfDva0F7pRtYBEi7cgyT73KtgKvTdvU/J
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-
+    
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-
+    
     /* Set gray background color and 100% height */
     .middle {
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
     }
-
+    
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-
+    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;}
+      .row.content {height:auto;} 
     }
   </style>
   <script>
@@ -126,7 +126,7 @@ joy2JtozG9FNn2RQbOfuwAiwRjShGKroPjPfuhqDkeML00CPfDva0F7pRtYBEi7cgyT73KtgKvTdvU/J
      return false;
      }
   return true;
-  }
+  }   
   </script>
 </head>
 <body>
@@ -137,7 +137,7 @@ joy2JtozG9FNn2RQbOfuwAiwRjShGKroPjPfuhqDkeML00CPfDva0F7pRtYBEi7cgyT73KtgKvTdvU/J
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">Logo</a>
     </div>
@@ -152,22 +152,21 @@ joy2JtozG9FNn2RQbOfuwAiwRjShGKroPjPfuhqDkeML00CPfDva0F7pRtYBEi7cgyT73KtgKvTdvU/J
   </div>
 </nav>
   <br/><br/>
-<div class="container-fluid text-center">
+<div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-4 sidenav">
        <div class="well">
         <p>ADS</p>
       </div>
       <div class="well">
-				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-d1299261-bc27-4d20-80ce-ceb579f9a442"></div>
+        <p>You can use this place as a widget.</p>
       </div>
     </div>
-
-    <div class="col-sm-4 well text-left middle">
+    
+    <div class="col-sm-4 well text-left middle"> 
       <h2>YouTube to Mp3 Converter</h2>
       <br/>
-
+      
 	 <form action="" method="GET" onsubmit="return validatebeforesubmit(this)">
 	  <div class="form-group">
 	    <label for="url">YouTube Video Link</label>
@@ -175,8 +174,8 @@ joy2JtozG9FNn2RQbOfuwAiwRjShGKroPjPfuhqDkeML00CPfDva0F7pRtYBEi7cgyT73KtgKvTdvU/J
 	  </div>
 	  <button type="submit" value="submit" class="btn btn-success">Convert</button>
 	</form>
-
-
+     
+      
 <?php
 
 if(!empty($error)) { ?>
@@ -204,14 +203,14 @@ echo '<h4>'.$ytinfo['title'].'</h4>
 } else {
 
 echo '<br /><div class="row" style="background:#fff">
-	  <div class="col-sm-4">NDR vous remercie davoir utiliser NDR Converter.</div>
+	  <div class="col-sm-4">Any Text/ Paragraph or Advertisement that you want.</div>
       </div>';
 
 
 }
- ?>
+ ?>      
       </div>
-
+    
     <div class="col-sm-4 sidenav">
       <div class="well">
         <p>ADS</p>
